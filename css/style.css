@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(151, 255, 220);
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p , li, footer{
+    font-size: 20px;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+ol {
+    list-style-position: inside;
+    list-style-type: decimal;
+}

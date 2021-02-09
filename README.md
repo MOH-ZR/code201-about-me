@@ -1,2 +1,2 @@
 # code201-about-me
-quizzes the user on fun facts and gives the user some basic information about who am I and where I came from.
+gives the user some basic information about who am I and where I came from. Quizzes the user on fun facts with five yes/no questions and a question that has multiple possible answers, the last question about guessing the correct number in my head. At the end show the result out of 7.  
