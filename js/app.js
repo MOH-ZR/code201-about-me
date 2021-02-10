@@ -71,6 +71,8 @@ switch (australiaCapital.toLowerCase()) {
 }
 question4();
 
+function question5(){
+
 var pakistanOffLang = prompt("Urdu is the official language of Pakistan?");
 //console.log(pakistanOffLang);
 switch (pakistanOffLang.toLowerCase()) {
@@ -83,6 +85,8 @@ switch (pakistanOffLang.toLowerCase()) {
     case 'no':
         alert("You are incorrect");
 }
+}
+question5();
 
 // Guessing the number question 
 let numGuessed;
