@@ -39,7 +39,7 @@ switch (htmlLang.toLowerCase()) {
 }
 question2();
 
-
+function question3() {
 var abbreviation = prompt(" 'ASCII' stands for 'American Standard Code for Information Interchange'?");
 //console.log(abbreviation);
 switch (abbreviation.toLowerCase()) {
@@ -52,6 +52,9 @@ switch (abbreviation.toLowerCase()) {
     case 'no':
         alert("You are incorrect");
 }
+}
+question3();
+
 
 var australiaCapital = prompt("Berlin is the capital of Australia?");
 //console.log(australiaCapital);
