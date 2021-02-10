@@ -88,6 +88,7 @@ switch (pakistanOffLang.toLowerCase()) {
 }
 question5();
 
+function question6(){
 // Guessing the number question 
 let numGuessed;
 let myNumber = 4;
@@ -110,6 +111,9 @@ do {
     }
     counter1++;
 } while (counter1 <= 5);
+}
+question6();
+
 
 
 // Question that has multiple possible correct answers
