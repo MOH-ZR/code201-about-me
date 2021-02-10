@@ -22,6 +22,8 @@ function question1() {
 }
 question1();
 
+
+function question2(){
 var htmlLang = prompt("HTML is a programming Language?");
 //console.log(htmlLang);
 switch (htmlLang.toLowerCase()) {
@@ -34,6 +36,9 @@ switch (htmlLang.toLowerCase()) {
         alert("You are correct");
         score++;
 }
+}
+question2();
+
 
 var abbreviation = prompt(" 'ASCII' stands for 'American Standard Code for Information Interchange'?");
 //console.log(abbreviation);
