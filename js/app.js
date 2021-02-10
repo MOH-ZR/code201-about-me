@@ -1,26 +1,30 @@
 'use strict';
+
+
 var score = 0;
- var userName = prompt('What\'s your name?');
+var userName = prompt('What\'s your name?');
 alert("Greetings " + userName + ", Welcome to my web site! Let's play a guessing game");
 
 // prompt the user in  five yes/No questions
-
-var centuryYears = prompt("A century is a period of 100 years?");
-//console.log(centuryYears);
-switch(centuryYears.toLowerCase()) {
-    case 'y':
-    case 'yes':
-        alert("You are correct");
-        score++;
-        break;
-    case 'n':
-    case 'no':
-        alert("You are incorrect");
+function question1() {
+    var centuryYears = prompt("A century is a period of 100 years?");
+    //console.log(centuryYears);
+    switch (centuryYears.toLowerCase()) {
+        case 'y':
+        case 'yes':
+            alert("You are correct");
+            score++;
+            break;
+        case 'n':
+        case 'no':
+            alert("You are incorrect");
+    }
 }
+question1();
 
 var htmlLang = prompt("HTML is a programming Language?");
 //console.log(htmlLang);
-switch(htmlLang.toLowerCase()) {
+switch (htmlLang.toLowerCase()) {
     case 'y':
     case 'yes':
         alert("You are incorrect");
@@ -33,7 +37,7 @@ switch(htmlLang.toLowerCase()) {
 
 var abbreviation = prompt(" 'ASCII' stands for 'American Standard Code for Information Interchange'?");
 //console.log(abbreviation);
-switch(abbreviation.toLowerCase()) {
+switch (abbreviation.toLowerCase()) {
     case 'y':
     case 'yes':
         alert("You are correct");
@@ -46,7 +50,7 @@ switch(abbreviation.toLowerCase()) {
 
 var australiaCapital = prompt("Berlin is the capital of Australia?");
 //console.log(australiaCapital);
-switch(australiaCapital.toLowerCase()) {
+switch (australiaCapital.toLowerCase()) {
     case 'y':
     case 'yes':
         alert("You are incorrect");
@@ -59,7 +63,7 @@ switch(australiaCapital.toLowerCase()) {
 
 var pakistanOffLang = prompt("Urdu is the official language of Pakistan?");
 //console.log(pakistanOffLang);
-switch(pakistanOffLang.toLowerCase()) {
+switch (pakistanOffLang.toLowerCase()) {
     case 'y':
     case 'yes':
         alert("You are correct");
@@ -81,17 +85,17 @@ do {
     }
     numGuessed = parseInt(prompt("Guess the number(from 1 to 10) in my head?"));
     //console.log(numGuessed);
-    if(numGuessed === myNumber) {
+    if (numGuessed === myNumber) {
         alert("You are correct, good job!");
         score++;
         break;
-    } else if(numGuessed < myNumber) {
+    } else if (numGuessed < myNumber) {
         alert("too low");
     } else {
         alert("too high");
     }
     counter1++;
-}while(counter1 <= 5);
+} while (counter1 <= 5);
 
 
 // Question that has multiple possible correct answers
@@ -99,20 +103,20 @@ var answers = ['celsius', 'fahrenheit', 'kelvin'];
 var guessedTemUnit;
 var counter2 = 1;
 do {
-    if (counter2 == 7){
+    if (counter2 == 7) {
         alert("You Tried six times. The correct answer: Celsius, Fahrenheit, and Kelvin");
         break;
     }
     guessedTemUnit = prompt("Give me unit to measure temperature?").toLowerCase();
     //console.log(guessedTemUnit);
-    if(guessedTemUnit == answers[0] || guessedTemUnit == answers[1] || guessedTemUnit==answers[2]) {
-            alert("You are Correct, good job!");
-            score++;
-            break;
+    if (guessedTemUnit == answers[0] || guessedTemUnit == answers[1] || guessedTemUnit == answers[2]) {
+        alert("You are Correct, good job!");
+        score++;
+        break;
     } else {
         alert("you are incorrect, try again");
     }
     counter2++;
-} while(counter2 <= 7);
+} while (counter2 <= 7);
 // final message to the user 
 alert("Thanks for playing " + userName + ". You got " + score + " out of 7.");
