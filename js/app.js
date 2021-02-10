@@ -115,7 +115,7 @@ do {
 question6();
 
 
-
+function question7(){
 // Question that has multiple possible correct answers
 var answers = ['celsius', 'fahrenheit', 'kelvin'];
 var guessedTemUnit;
@@ -136,5 +136,8 @@ do {
     }
     counter2++;
 } while (counter2 <= 7);
+}
+question7();
+
 // final message to the user 
 alert("Thanks for playing " + userName + ". You got " + score + " out of 7.");
