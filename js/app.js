@@ -55,7 +55,7 @@ switch (abbreviation.toLowerCase()) {
 }
 question3();
 
-
+function question4(){
 var australiaCapital = prompt("Berlin is the capital of Australia?");
 //console.log(australiaCapital);
 switch (australiaCapital.toLowerCase()) {
@@ -68,6 +68,8 @@ switch (australiaCapital.toLowerCase()) {
         alert("You are correct");
         score++;
 }
+}
+question4();
 
 var pakistanOffLang = prompt("Urdu is the official language of Pakistan?");
 //console.log(pakistanOffLang);
